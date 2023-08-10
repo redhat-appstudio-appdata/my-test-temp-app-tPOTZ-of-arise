@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: node-express-hello-2gzh
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/karthik-jk-tenant/my-test-temp-app/node-express-hello-2gzh@sha256:7405c5cf04f270fd1e27b746e8d9cef8c6eb3292a6d870eadd34b8101e700d19
+        name: my-nodejs
+        resources: {}
+status: {}
