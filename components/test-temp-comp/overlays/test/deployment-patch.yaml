@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-temp-comp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/karthik-jk-tenant/my-test-temp-app/test-temp-comp@sha256:bcb6e72646b5fbd55b65459a6b03bd9ed3ec75282e71973f183f1db25cc463a9
+        name: my-nodejs
+        resources: {}
+status: {}
