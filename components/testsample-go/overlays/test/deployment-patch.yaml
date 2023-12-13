@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: testsample-go
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/karthik-jk-tenant/my-test-temp-app/testsample-go@sha256:23fc07465d82c34edcd77a36c9d7a2c2c7c33bc20c1f9e0a9ebef21fa6406503
+        name: my-go
+        resources: {}
+status: {}
