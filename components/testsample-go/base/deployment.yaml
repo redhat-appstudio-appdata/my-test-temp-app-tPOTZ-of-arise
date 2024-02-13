@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/part-of: my-test-temp-app
   name: testsample-go
 spec:
-  replicas: 1
+  replicas: 0
   revisionHistoryLimit: 0
   selector:
     matchLabels:
